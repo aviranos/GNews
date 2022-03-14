@@ -104,7 +104,7 @@ class GNews:
         :return: The article object from newspaper3k.
         """
         try:
-               import_or_install('newspaper')  # 'newspaper3k' = bug
+            import_or_install('newspaper')  # 'newspaper3k' = bug
             from newspaper import Article
             article = Article(url="%s" % url, language=self._language)
             article.download()
